@@ -1,0 +1,11 @@
+{
+  "name": "common-libraries",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Hanyeol Cho",
+  "license": "MIT",
+  "dependencies": {
+    "caver-js": "^1.6.4",
+    "web3": "^1.7.0"
+  }
+}

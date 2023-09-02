@@ -1,32 +1,18 @@
-# W3Box
+# W3Apps
 
 ## Introduction
-W3Box is a public file hosting service based on the Web3Q chain. Anyone can upload public files without permission, and only the uploader can delete uploaded files.
-
-W3Box can be visited here: [https://web3q.io/w3box.w3q/](https://web3q.io/w3box.w3q/#/).
-<br/>
-
+W3Apps is a public dapp hosting service based on the Web3Q chain. Anyone can upload public dapps without permission, and only the uploader can delete uploaded dapps.
 
 ## How does it work
 W3Box is a fully decentralized dApp which means the front-end code, back-end (smart contract) code, and users' files are all stored on the chain. The front-end contract is w3box.w3q, the backend contract is SimpleW3box and Users' files are store in file.w3q.
 <br/>
 
-### w3box.w3q
-[w3box.w3q](https://galileo.web3q.io/w3ns.w3q/#/domains/w3box.w3q) is a w3ns domain name, which maps a contract address.
-The contract mapped by w3box.w3q is a FlatDirectory contract that stores w3box's website files.
-
-FlatDirectory is the implementation of the web3 storage data contract. Click [here](https://docs.web3q.io/tutorials/migrate-your-website-to-web3q-in-5-mins) for details.
-
-
-### file.w3q
-[file.w3q](https://galileo.web3q.io/w3ns.w3q/#/domains/file.w3q) is also a w3ns domain name, and its mapped FlatDirectory contract is used to store files uploaded by users.
-
 ### SimpleW3box
-SimpleW3box is used to manage the file information uploaded by users. 
+SimpleW3apps is used to manage the dapp information uploaded by users. 
 
 #### Storage structure
 ```
-contract SimpleW3box {
+contract SimpleW3apps {
     FlatDirectory public fileFD; // file.w3q contract
     mapping(address => FilesInfo) fileInfos; // User upload file mapping
 }
